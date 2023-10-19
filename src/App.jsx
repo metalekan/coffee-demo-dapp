@@ -29,9 +29,9 @@ export default function Home() {
   }
 
   return (
-    <main className="container min-vh-100 mx-auto bg-light bg-gradient row pt-3">
+    <main className="container-fluid min-vh-100 mx-auto bg-secondary-subtle bg-gradient row pt-3">
       <div className="d-flex align-items-center justify-content-between">
-        <h2 className="">Buy me a coffee</h2>
+        <h4 className="fw-bolder">Buy me a coffee</h4>
         <ConnectWallet />
       </div>
 
@@ -89,11 +89,11 @@ export default function Home() {
               <div className="d-flex flex-column gap-3">
                 {
                   recentCoffee && recentCoffee.map((coffee, index) => (
-                    <div key={index} className="mx-3">
+                    <div key={index} className="mx-lg-3">
                       <div className="d-flex flex-column gap-1 bg-light bg-gradient shadow-lg rounded-4 p-3">
-                        <span className="">{coffee[1]}</span>
+                        <p className="">{coffee[1]}</p>
                         <span className="fw-bold">From: {coffee[2]}</span>
-                        <span>{coffee[0]}</span>
+                        <span className="text-truncate">{coffee[0]}</span>
                       </div>
                     </div>
                   ))
