@@ -72,7 +72,7 @@ export default function Home() {
                   >
                     {"Buy coffee 0.01 BNB"}
                   </Web3Button> :
-                  <span className="btn btn-dark">Connect your wallet</span>
+                  <span>Connect your wallet</span>
               }
             </div>
           </form>
